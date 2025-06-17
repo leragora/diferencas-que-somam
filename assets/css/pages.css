@@ -445,7 +445,7 @@ body, #container-wrap { background:#54ba3f; }
 #slider { width:600px; height:1065px; }
 .page-scale-wrap { width:600px; height:1065px; background: #54ba3f !important; }
 .paper-vertical { width:600px; height:100%; }
-.paper-horizontal { width:9760px; height:1077px; }
+.paper-horizontal { width:10370px; height:1077px; }
 @media all and (max-height:1065px) {
 	.paper-horizontal { margin:0;top:0;}
 	#container > .page { margin:0 auto;}/*pos top for webkit+baker*/
@@ -1003,6 +1003,7 @@ body, #container-wrap { background:#54ba3f; }
 
 #item1439 {
 	width:480px !important;
+	min-height:3017px !important;
 	padding:0px 30px 0px 0px;
 }
 
@@ -2443,7 +2444,7 @@ body, #container-wrap { background:#54ba3f; }
 #item4189 {
 	width:540px !important;
 	left:30px !important;
-	top:228px !important;
+	top:248px !important;
 	min-height:60px !important;
 	direction:ltr;
 }
@@ -2595,16 +2596,84 @@ body, #container-wrap { background:#54ba3f; }
 	-webkit-transform-origin:49.992% 49.989%;
 }
 
-#item4605 {
+#item4823 {
+	width:600px !important;
+	height:1065px !important;
+	background:#e5e5e5;
+}
+
+@keyframes entrada-esquerda-3851 {
+	0% {
+		transform:translate(0px,0px);
+		opacity:0;
+	}
+	100% {
+		transform:translate(616.422px,0px);
+		opacity:1;
+	}
+}
+@-webkit-keyframes entrada-esquerda-3851 {
+	0% {
+		-webkit-transform:translate(0px,0px);
+		opacity:0;
+	}
+	100% {
+		-webkit-transform:translate(616.422px,0px);
+		opacity:1;
+	}
+}
+#item3851 {
+	transform-origin:100% 50%;
+	-webkit-transform-origin:100% 50%;
+}
+
+@keyframes entrada-direita-4888 {
+	0% {transform:translate(0px,0px);}
+	100% {transform:translate(-770.673px,0px);}
+}
+@-webkit-keyframes entrada-direita-4888 {
+	0% {-webkit-transform:translate(0px,0px);}
+	100% {-webkit-transform:translate(-770.673px,0px);}
+}
+#item4888 {
+	transform-origin:0% 50%;
+	-webkit-transform-origin:0% 50%;
+}
+
+#item4921 {
+	width:600px !important;
+	top:51px !important;
+	min-height:134px !important;
+}
+
+#item4899 {
 	width:65px !important;
 	height:53px !important;
 }
 
-#item4602 {
+#item4896 {
 	width:65px !important;
 	height:53px !important;
 	left:485px !important;
 	top:961px !important;
+}
+
+#item4735 {
+	width:65px !important;
+	height:65px !important;
+}
+
+#item4738 {
+	width:65px !important;
+	top:65px !important;
+	min-height:14px !important;
+}
+
+#item4732 {
+	width:65px !important;
+	height:79px !important;
+	left:45px !important;
+	top:948px !important;
 }
 
 p.txt-end {
@@ -2615,6 +2684,18 @@ p.txt-end {
 	color:#000;
 	letter-spacing:0.010em;
 	text-align:left;
+}
+
+p.olho-apoio {
+	font-weight:600;
+	font-style:italic;
+	font-family:Raleway;
+	font-size:22px;
+	line-height:30px;
+	color:#000;
+	letter-spacing:0.010em;
+	margin-bottom:20px;
+	text-align:center;
 }
 
 h2.olho {
@@ -2641,17 +2722,6 @@ p.intertitulo {
 	text-align:left;
 }
 
-p.persona-cargo2 {
-	font-weight:500;
-	font-family:Raleway;
-	font-size:20px;
-	line-height:26px;
-	color:#4f0c7a;
-	letter-spacing:0.010em;
-	margin-bottom:10px;
-	text-align:center;
-}
-
 p.persona-cargo {
 	font-weight:500;
 	font-family:Raleway;
@@ -2660,16 +2730,6 @@ p.persona-cargo {
 	color:#000;
 	letter-spacing:0.010em;
 	text-align:right;
-}
-
-p.persona-nome2 {
-	font-weight:bold;
-	font-family:Raleway;
-	font-size:24px;
-	line-height:22px;
-	color:#4f0c7a;
-	letter-spacing:0.010em;
-	text-align:center;
 }
 
 p.persona-nome {
@@ -2699,7 +2759,6 @@ p.btn-apoio {
 	font-family:Raleway;
 	font-size:20px;
 	line-height:26px;
-	color:#54ba3f;
 	letter-spacing:0.010em;
 	margin-top:25px;
 	text-align:center;
@@ -2714,6 +2773,7 @@ span.clique {
     padding-top: 15px;
     padding-bottom: 12px;
 }
+
 p.txt {
 	font-weight:500;
 	font-family:Raleway;
@@ -2723,6 +2783,17 @@ p.txt {
 	letter-spacing:0.010em;
 	margin-bottom:10px;
 	text-align:left;
+}
+
+p.titulo-apoio {
+	font-weight:900;
+	font-family:Raleway;
+	font-size:30px;
+	line-height:36px;
+	color:#000;
+	letter-spacing:0.010em;
+	margin-bottom:10px;
+	text-align:center;
 }
 
 h1.titulo-abre {
@@ -2778,17 +2849,6 @@ p.foguete {
 	text-align:center;
 }
 
-p.foguete-expediente {
-	font-weight:400;
-	font-family:Raleway;
-	font-size:30px;
-	line-height:60px;
-	color:#fff;
-	letter-spacing:0.100em;
-	direction:ltr;
-	text-align:right;
-}
-
 p.exp-nome {
 	font-family:Raleway;
 	font-size:24px;
@@ -2830,12 +2890,7 @@ span.pecas-foguete {
 	padding-top: 4px;
 	padding-bottom: 8px;
 }
-
 span.menu-foguete {
-}
-
-span.foguete-persona {
-	color:#4f0c7a;
 }
 
 span.cor-roxo {
