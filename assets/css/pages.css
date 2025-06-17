@@ -2778,6 +2778,17 @@ p.foguete {
 	text-align:center;
 }
 
+p.foguete-expediente {
+	font-weight:400;
+	font-family:Raleway;
+	font-size:30px;
+	line-height:60px;
+	color:#fff;
+	letter-spacing:0.100em;
+	direction:ltr;
+	text-align:right;
+}
+
 p.exp-nome {
 	font-family:Raleway;
 	font-size:24px;
